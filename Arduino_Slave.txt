@@ -1,0 +1,74 @@
+#include <SoftwareSerial.h>
+//Definicion de variables
+//Int que tomara diferentes values para designar HIGH o LOW
+int ch;
+//temp
+char temp;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(31, OUTPUT);
+  pinMode(33, OUTPUT);
+  pinMode(35, OUTPUT);
+  pinMode(37, OUTPUT);
+  pinMode(39, OUTPUT);
+  pinMode(41, OUTPUT);
+  pinMode(43, OUTPUT);
+  pinMode(45, OUTPUT);
+  pinMode(47, OUTPUT);
+  pinMode(49, OUTPUT);
+  pinMode(51, OUTPUT);
+}
+
+void loop() {
+  if(Serial.available() > 0){
+    
+    temp= Serial.read();
+    ch =String(temp).toInt();
+    digitalWrite(31,ch);
+    Serial.print(ch);
+    
+    temp= Serial.read();
+    ch =String(temp).toInt();
+    digitalWrite(33,ch);
+    Serial.print(ch);
+
+    temp= Serial.read();
+    ch =String(temp).toInt();
+    digitalWrite(35,ch);
+    Serial.print(ch);
+
+    temp= Serial.read();
+    ch =String(temp).toInt();
+    digitalWrite(37,ch);
+
+    temp= Serial.read();
+    ch =String(temp).toInt();
+    digitalWrite(39,ch);
+
+    temp= Serial.read();
+    ch =String(temp).toInt();
+    digitalWrite(41,ch);
+
+    temp= Serial.read();
+    ch =String(temp).toInt();
+    digitalWrite(43,ch);
+
+    temp= Serial.read();
+    ch =String(temp).toInt();
+    digitalWrite(45,ch);
+
+    temp= Serial.read();
+    ch =String(temp).toInt();
+    digitalWrite(47,ch);
+
+    temp= Serial.read();
+    ch =String(temp).toInt();
+    digitalWrite(49,ch);
+
+    temp= Serial.read();
+    ch =String(temp).toInt();
+    digitalWrite(51,ch);
+    
+  }
+}

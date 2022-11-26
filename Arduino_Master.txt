@@ -1,0 +1,101 @@
+//Definicion de variables
+//variable int que tomara los diferentes valores de INPUT
+int ch;
+
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(31, INPUT);
+  pinMode(33, INPUT);
+  pinMode(35, INPUT);
+  pinMode(37, INPUT);
+  pinMode(39, INPUT);
+  pinMode(41, INPUT);
+  pinMode(43, INPUT);
+  pinMode(45, INPUT);
+  pinMode(47, INPUT);
+  pinMode(49, INPUT);
+  pinMode(51, INPUT);
+}
+
+void loop() {
+  //por cada bit, devolvemos un char dependiendo de su value
+  
+  ch = digitalRead(31);
+  if(ch==1){
+    Serial.write("1");
+  }else{
+    Serial.write("0");
+  }
+
+    ch = digitalRead(33);
+  if(ch==1){
+    Serial.write("1");
+  }else{
+    Serial.write("0");
+  }
+  
+    ch = digitalRead(35);
+  if(ch==1){
+    Serial.write("1");
+  }else{
+    Serial.write("0");
+  }
+  
+    ch = digitalRead(37);
+  if(ch==1){
+    Serial.write("1");
+  }else{
+    Serial.write("0");
+  }
+  
+    ch = digitalRead(39);
+  if(ch==1){
+    Serial.write("1");
+  }else{
+    Serial.write("0");
+  }
+  
+    ch = digitalRead(41);
+  if(ch==1){
+    Serial.write("1");
+  }else{
+    Serial.write("0");
+  }
+  
+    ch = digitalRead(43);
+  if(ch==1){
+    Serial.write("1");
+  }else{
+    Serial.write("0");
+  }
+  
+    ch = digitalRead(45);
+  if(ch==1){
+    Serial.write("1");
+  }else{
+    Serial.write("0");
+  }
+  
+    ch = digitalRead(47);
+  if(ch==1){
+    Serial.write("1");
+  }else{
+    Serial.write("0");
+  }
+  
+    ch = digitalRead(49);
+  if(ch==1){
+    Serial.write("1");
+  }else{
+    Serial.write("0");
+  }
+  
+    ch = digitalRead(51);
+  if(ch==1){
+    Serial.write("1");
+  }else{
+    Serial.write("0");
+  }
+  
+}
